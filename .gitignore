@@ -1,0 +1,11 @@
+# 個人的なメモやバックアップ
+バックアップメモ.txt
+
+#からにするuf2
+flash_nuke.uf2
+
+#backupファイル
+*.zip
+
+#UF2backup
+UF2バックアップ/

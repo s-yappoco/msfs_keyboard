@@ -1,27 +1,26 @@
-# msfs_keyboard
+# MSFS Macro Keyboard for PS5
 
-![msfs_keyboard](imgur.com image replace me!)
+PS5版 Microsoft Flight Simulator 2024 (MSFS2024) に最適化した、27キー搭載の自作マクロキーボードです。
 
-*A short description of the keyboard/project*
+## 特徴
+* **PS5完全対応**: PS5版 MSFS2024 での動作を確認済み。
+* **Vial対応**: 専用ソフトのインストール不要。ブラウザ上で簡単にキーアサインを変更できます。
+* **膨大なレイヤー数**: 最大16レイヤーに対応し、機体ごとの複雑な操作も割り当て可能。
+* **高度なマクロ**: 複雑なキーシーケンスをワンタップで実行。
+* **LEDインジケーター**:
+    * **SIM Rate確認**: 4番目のLEDの色で、現在のSIM Rateを視覚的に判別可能（ユーザーキーコード制御）。
+    * **レイヤー確認**: 5番目のLEDの色で、現在選択中のレイヤーを一目で把握。
 
-* Keyboard Maintainer: [s-yappoco](https://github.com/s-yappoco)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+## 外観
+![マクロキーボードの写真](images/main_photo.jpg)
+*(※imagesフォルダに写真を入れ、ファイル名を合わせると表示されます)*
 
-Make example for this keyboard (after setting up your build environment):
+## 設定方法
+1. [Vial Web](https://get.vial.today/) にアクセスします。
+2. キーボードを接続し、ブラウザ上でキーアサインやマクロを自由に編集してください。
 
-    make msfs_keyboard:default
+![Vial設定画面](images/vial_ss.png)
 
-Flashing example for this keyboard:
-
-    make msfs_keyboard:default:flash
-
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
-
-## Bootloader
-
-Enter the bootloader in 3 ways:
-
-* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+## 開発環境
+* Firmware: QMK / Vial
+* MCU: RP2040
